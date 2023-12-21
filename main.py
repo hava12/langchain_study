@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
-from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI
 
 load_dotenv()
 
+from langchain.llms import OpenAI
 llm = OpenAI()
-chat_model = ChatOpenAI()
+result = llm.predict('hi!')
+print(result)
 
-llm.predict('hi!')
-
-chat_model.predict("hi!")
+# from langchain.chat_models import ChatOpenAI
+# chat_model = ChatOpenAI()
+# chat_model.predict("hi!")
