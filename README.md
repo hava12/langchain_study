@@ -11,3 +11,7 @@
 - VS Code
 
 ## 초기 환경 세팅
+- Package 설치
+  - openai
+  - langchain
+  - streamlit
