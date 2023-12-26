@@ -1,4 +1,6 @@
 from dotenv import load_dotenv
+from langchain.chat_models import ChatOpenAI
+from langchain.llms import CTransformers
 
 load_dotenv()
 
@@ -8,10 +10,6 @@ content = "고양이"
 # llm = OpenAI()
 # result = llm.predict(content + "에 대한 시를 써줘")
 # print(result)
-
-
-from langchain.chat_models import ChatOpenAI
-from langchain.llms import CTransformers
 
 # chat_model = ChatOpenAI()
 llm = CTransformers(
